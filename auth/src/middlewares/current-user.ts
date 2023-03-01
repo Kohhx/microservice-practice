@@ -30,7 +30,6 @@ export const currentUser = (
     ) as UserPayload;
 
     req.currentUser = payload;
-    // res.send({ currentUser: payload });
   } catch (error) {
     res.send({ currentUser: null });
   }
